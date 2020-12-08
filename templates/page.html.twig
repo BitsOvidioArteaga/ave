@@ -1,0 +1,93 @@
+{#
+/**
+ * @file
+ * Theme override to display a single page.
+ *
+ * Regions:
+*  - page.top_bar: Top bar regions for menu login
+*  - page.main_nav_bar: Main nav var for main menu
+*  - page.slider_front: Slider front for show slider in home.
+*  - page.content: Show content from pages.
+*  - page.footer_one: Footer one to show footers data.
+*  - page.footer_two: Footer one to show footers data.
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+{# /.layout-container #}
+
+<header>
+
+  <div class="top-bar">
+    <div class="container">
+      <div class="money-selector">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Currency
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">USD</a>
+            <a class="dropdown-item" href="#">GBP</a>
+          </div>
+        </div>
+      </div>
+        {% if page.top_bar %}
+          {{ page.top_bar }}
+        {% endif %}
+      </div>
+  </div>
+
+  <div class="main-nav-bar">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+
+        {% if page.navbar_brand %}
+          {{ page.navbar_brand }}
+        {% endif %}
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          {% if page.main_navbar %}
+            {{ page.main_navbar }}
+          {% endif %}
+
+          {% if page.main_search_form %}
+            {{ page.main_search_form }}
+          {% endif %}
+        </div>
+      </nav>
+	</div>
+
+
+  {% if page.slider_front %}
+    <div class="slider-front">
+      {{ page.slider_front }}
+    </div>
+  {% endif %}
+</header>
+
+<main>
+  {% if page.content %}
+    {{ page.content }}
+  {% endif %}
+</main>
+
+<footer>
+  {% if page.footer_one %}
+    <div class="footer-sides container">
+      {{ page.footer_one }}
+    </div>
+  {% endif %}
+
+  {% if page.footer_two %}
+    <div class="footer-boxes container">
+      {{ page.footer_two }}
+    </div>
+  {% endif %}
+</footer>
+

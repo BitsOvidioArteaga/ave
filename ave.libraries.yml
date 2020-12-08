@@ -1,0 +1,43 @@
+google.montserrat:
+  css:
+    theme:
+      https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,800&display=swap': { type: external, minified: false}
+
+google.roboto:
+  css:
+    theme:
+      https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,500;1,900&display=swap: { type: external, minified: false }
+
+
+bootstrap:
+  version: 4.5
+  lisence:
+    name: MIT
+    url: https://github.com/twbs/bootstrap/blob/v4.5.3/LICENSE
+    gpl-compatible: true
+  css:
+    theme:
+      css/bootstrap.css: {}
+  js:
+    js/bootstrap.js: {}
+  dependencies:
+    - core/jquery
+    - core/popperjs
+
+fontawesome:
+  version: 4.5
+  lisence:
+    name: MIT
+    url: https://github.com/twbs/bootstrap/blob/v4.5.3/LICENSE
+    gpl-compatible: true
+  js:
+    https://kit.fontawesome.com/16c6fc95c2.js: { type: external, minified: false, attributes: { crossorigin: 'anonymous', data-search-pseudo-elements: true, defer: true } }
+
+global:
+  version: 1.0
+  css:
+    theme:
+      css/global.css: {}
+  js:
+    js/global.js: {}
+

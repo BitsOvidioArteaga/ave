@@ -1,0 +1,23 @@
+name: Ave Theme
+description: 'Ave theme custom, by Ovidio Arteaga'
+type: theme
+base theme: classy
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - ave/google.montserrat
+  - ave/google.roboto
+  - ave/bootstrap
+  - ave/fontawesome
+  - ave/global
+
+regions:
+  top_bar: 'Top Bar'
+  navbar_brand: 'Nav Bar Brand'
+  main_navbar: 'Main Nav Bar'
+  main_search_form: 'Main Search Form'
+  slider_front: 'Slider Front'
+  content: 'content'
+  footer_one: 'Footer One'
+  footer_two: 'Footer Two'
+
