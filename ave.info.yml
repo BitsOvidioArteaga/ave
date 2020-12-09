@@ -19,5 +19,6 @@ regions:
   slider_front: 'Slider Front'
   content: 'content'
   footer_one: 'Footer One'
-  footer_two: 'Footer Two'
+  footer_two_left: 'Footer Two Left'
+  footer_two_right: 'Footer Two Right'
 

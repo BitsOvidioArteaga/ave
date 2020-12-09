@@ -339,27 +339,25 @@ footer .footer-sides {
   justify-content: space-between;
   padding-top: 35px;
 }
-footer .footer-sides div {
+footer .footer-sides > nav, footer .footer-sides > div {
   width: 20%;
 }
-footer .footer-sides div p {
+footer .footer-sides > nav h2, footer .footer-sides > div h2 {
   padding-bottom: 14px;
-}
-footer .footer-sides div p strong {
   color: var(--primary-color);
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: 600;
 }
-footer .footer-sides div ul {
+footer .footer-sides > nav ul, footer .footer-sides > div ul {
   margin: 0;
   padding: 0;
 }
-footer .footer-sides div ul li {
+footer .footer-sides > nav ul li, footer .footer-sides > div ul li {
   list-style: none;
   margin-bottom: 14px;
 }
-footer .footer-sides div ul li a {
+footer .footer-sides > nav ul li a, footer .footer-sides > div ul li a {
   color: var(--primary-color);
   fonbt-weight: 300;
 }
@@ -368,7 +366,7 @@ footer .footer-boxes {
   justify-content: space-between;
   margin-top: 70px;
 }
-footer .footer-boxes div {
+footer .footer-boxes > div {
   width: 48%;
   height: 200px;
 }
@@ -380,6 +378,7 @@ footer .footer-boxes .left {
   align-items: center;
   flex-wrap: flex-wrap;
   color: white;
+  text-align: center;
 }
 footer .footer-boxes .left h3 {
   text-transform: uppercase;
