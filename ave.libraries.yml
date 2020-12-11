@@ -41,3 +41,17 @@ global:
   js:
     js/global.js: {}
 
+swiper:
+  version: 6.3.5
+  license:
+    name: MIT
+    url: https://github.com/nolimits4web/swiper/raw/master/LICENSE
+    gpl-compatible: true
+  css:
+    theme:
+      css/swiper-bundle.css: {}
+  js:
+    js/swiper-bundle.js: {}
+    js/swiper-init.js: {}
+
+

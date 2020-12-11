@@ -10,6 +10,7 @@ libraries:
   - ave/bootstrap
   - ave/fontawesome
   - ave/global
+  - ave/swiper
 
 regions:
   top_bar: 'Top Bar'

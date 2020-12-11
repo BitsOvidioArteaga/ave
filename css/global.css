@@ -21,6 +21,7 @@ header {
   position: relative;
   height: 100vh;
   max-height: 600px;
+  z-index: 0;
 }
 header .top-bar {
   background-color: #333;
@@ -392,6 +393,10 @@ footer .footer-boxes .left h4 {
 }
 footer .footer-boxes .right {
   background-color: var(--secondary-color);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 footer .footer-boxes .right ul {
   display: flex;
@@ -408,6 +413,16 @@ footer .footer-boxes .right ul li {
 footer .footer-boxes .right ul li a {
   color: white;
   font-size: 2em;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  top: 33.5% !important;
+  outline: none;
+  color: var(--primary-color) !important;
 }
 
 /*# sourceMappingURL=global.css.map */
