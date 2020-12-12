@@ -276,15 +276,23 @@ main
 
   .look-book
     display: flex
-    margin-top: 70px
     justify-content: space-between
     height: 400px
+    overflow: hidden
+
+    &.view.view-lookbook2
+        .view-content
+          width: 100%
 
     .look-book-item
       background-color: #f8f8f8
       display: flex
-      width: 32%
+      width: 32% !important
       text-align: right
+
+      .box-inner-item
+        display: flex
+        height: 100%
 
       .left-image
         margin: 14px 14px 0 21px
@@ -297,6 +305,7 @@ main
         justify-content: center
         margin-right: 21px
         align-items: flex-end
+        height: 100%
 
         h3
           text-transform: uppercase
@@ -316,7 +325,7 @@ main
           margin-top: 14px
           font-size: .8em
 
-        button
+        button, a
           background-color: var(--primary-color)
           border: none
           outline: none
@@ -324,6 +333,7 @@ main
           padding: 14px
           display: inline-block
           width: 140px
+          text-align: center
 
           &:hover
             background-color: var(--secondary-color)
@@ -421,8 +431,6 @@ footer
   top: 33.5% !important
   outline: none
   color: var(--primary-color) !important
-
-
 
 
 

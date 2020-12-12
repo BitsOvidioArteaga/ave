@@ -275,15 +275,22 @@ main .container-fluid .items-list .items-right .items-right-bottom .two {
 }
 main .look-book {
   display: flex;
-  margin-top: 70px;
   justify-content: space-between;
   height: 400px;
+  overflow: hidden;
+}
+main .look-book.view.view-lookbook2 .view-content {
+  width: 100%;
 }
 main .look-book .look-book-item {
   background-color: #f8f8f8;
   display: flex;
-  width: 32%;
+  width: 32% !important;
   text-align: right;
+}
+main .look-book .look-book-item .box-inner-item {
+  display: flex;
+  height: 100%;
 }
 main .look-book .look-book-item .left-image {
   margin: 14px 14px 0 21px;
@@ -296,6 +303,7 @@ main .look-book .look-book-item .content {
   justify-content: center;
   margin-right: 21px;
   align-items: flex-end;
+  height: 100%;
 }
 main .look-book .look-book-item .content h3 {
   text-transform: uppercase;
@@ -315,7 +323,7 @@ main .look-book .look-book-item .content p {
   margin-top: 14px;
   font-size: 0.8em;
 }
-main .look-book .look-book-item .content button {
+main .look-book .look-book-item .content button, main .look-book .look-book-item .content a {
   background-color: var(--primary-color);
   border: none;
   outline: none;
@@ -323,8 +331,9 @@ main .look-book .look-book-item .content button {
   padding: 14px;
   display: inline-block;
   width: 140px;
+  text-align: center;
 }
-main .look-book .look-book-item .content button:hover {
+main .look-book .look-book-item .content button:hover, main .look-book .look-book-item .content a:hover {
   background-color: var(--secondary-color);
   color: white;
 }
