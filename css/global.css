@@ -19,9 +19,6 @@ body .container-fluid {
 
 header {
   position: relative;
-  height: 100vh;
-  max-height: 600px;
-  z-index: 0;
 }
 header .top-bar {
   background-color: #333;
@@ -128,8 +125,23 @@ header .slider-front img {
 
 main {
   position: relative;
-  top: 60px;
-  margin-top: 40px;
+}
+main .page-header {
+  background: #333;
+  text-align: center;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+main .page-header h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+main .page-header p {
+  text-transform: uppercase;
 }
 main .container-fluid {
   margin-bottom: 140px;
@@ -487,6 +499,16 @@ footer .footer-boxes .right ul li a {
   top: 33.5% !important;
   outline: none;
   color: var(--primary-color) !important;
+}
+
+body.path-frontpage header {
+  height: 100vh;
+  max-height: 600px;
+  z-index: 0;
+}
+body.path-frontpage main {
+  top: 60px;
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=global.css.map */

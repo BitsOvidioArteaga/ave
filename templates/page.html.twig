@@ -63,7 +63,6 @@
       </nav>
 	</div>
 
-
   {% if page.slider_front and is_front %}
     <div class="slider-front">
       {{ page.slider_front }}
@@ -72,6 +71,15 @@
 </header>
 
 <main>
+  {% if not is_front %}
+
+    <div class="page-header">
+      <h1>{{ node.label }}</h1>
+      <p>{{ node.body.summary }}</p>
+    </div>
+
+  {% endif %}
+
   {% if is_front %}
     <div class="container-fluid">
       <div class="items-nav">
@@ -119,7 +127,6 @@
   {% if page.footer_one %}
     {{ page.footer_one }}
   {% endif %}
-
 
   <div class="footer-boxes container">
     <div class="left">
