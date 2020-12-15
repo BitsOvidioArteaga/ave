@@ -128,6 +128,7 @@ main
   margin-top: 40px
 
   .container-fluid
+    margin-bottom: 140px
 
     .items-nav
       border-top: 1px solid #eaeaea
@@ -154,6 +155,92 @@ main
               &.active
                 color: var(--secondary-color)
 
+    .content-tabs
+      &_tab-one
+        display: flex
+
+      &_tab-two,
+      &_tab-three,
+      &_tab-four,
+      &_tab-five
+        display: none
+
+      .front-grid
+        display: grid
+        grid-template-areas: 'product1 product2 product3 product3' 'product4 product4 product3 product3' 'product4 product4 product5 product6'
+        height: 940px
+        overflow: hidden
+
+        .grid-product
+          position: relative
+          overflow: hidden
+
+          .product-image
+
+            img
+              width: 100%
+              height: auto
+
+          .price
+            margin: 14px
+            display: inline-block
+            color: var(--primary-color)
+            font-size: .8em
+            position: absolute
+            left: 0
+            top: 0
+
+          &:hover .extra-information
+            display: block
+
+          .extra-information
+            position: absolute
+            height: 100px
+            bottom: 0px
+            z-index: 1
+            background-color: white
+            color: var(--primary-color)
+            width: 100%
+            text-align: center
+            display: none
+
+            p
+              font-size: .7em
+              margin: 0 21px
+
+              strong
+                font-weight: 500
+                text-transform: uppercase
+                margin: 6px 0
+                display: inline-block
+
+                a
+                  font-size: 14px
+                  color: var(--secondary-color)
+
+            .icon-actions
+              display: flex
+              justify-content: center
+              margin-top: 14px
+
+              div
+                background-color: var(--primary-color)
+                display: flex
+                justify-content: center
+                align-content: center
+                align-items: center
+                width: 30px
+                height: 30px
+                border-radius: 50%
+                margin: 0 7px
+                color: white
+                font-size: .6em
+                cursor: pointer
+
+                &:hover
+                  background-color: var(--secondary-color)
+
+
     .items-list
       height: 900px
       display: flex
@@ -167,12 +254,6 @@ main
 
         &:hover .extra-information
           display: block
-
-        .price
-          margin: 14px
-          display: inline-block
-          color: var(--primary-color)
-          font-size: .8em
 
         .extra-information
           position: absolute
@@ -194,28 +275,6 @@ main
               text-transform: uppercase
               margin: 6px 0
               display: inline-block
-
-          .icon-actions
-            display: flex
-            justify-content: center
-
-            div
-              background-color: var(--primary-color)
-              display: flex
-              justify-content: center
-              align-content: center
-              align-items: center
-              width: 30px
-              height: 30px
-              border-radius: 50%
-              margin: 0 7px
-              color: white
-              font-size: .6em
-              cursor: pointer
-
-              &:hover
-                background-color: var(--secondary-color)
-
 
 
 

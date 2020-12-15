@@ -72,6 +72,44 @@
 </header>
 
 <main>
+  {% if is_front %}
+    <div class="container-fluid">
+      <div class="items-nav">
+        <nav>
+          <ul>
+            <li class="first"><a id="popular" href="#" class="active">Popular</a></li>
+            <li><a id="new_arrivals" href="#">New Arrivals</a></li>
+            <li><a id="best_sellers" href="#">Best Sellers</a></li>
+            <li><a id="special_offers" href="#">Special Offers</a></li>
+            <li><a id="coming_soon" href="#">Coming soon</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content-tabs">
+        <div class="content-tabs_tab-one">
+          {{ page.content_front_tab_one }}
+        </div>
+
+        <div class="content-tabs_tab-two">
+          {{ page.content_front_tab_two }}
+        </div>
+
+        <div class="content-tabs_tab-three">
+          {{ page.content_front_tab_three }}
+        </div>
+
+        <div class="content-tabs_tab-four">
+          {{ page.content_front_tab_four }}
+        </div>
+
+        <div class="content-tabs_tab-five">
+          {{ page.content_front_tab_five }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
   {% if page.content %}
     {{ page.content }}
   {% endif %}

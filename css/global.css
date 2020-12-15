@@ -131,6 +131,9 @@ main {
   top: 60px;
   margin-top: 40px;
 }
+main .container-fluid {
+  margin-bottom: 140px;
+}
 main .container-fluid .items-nav {
   border-top: 1px solid #eaeaea;
 }
@@ -156,6 +159,85 @@ main .container-fluid .items-nav nav ul li a {
 main .container-fluid .items-nav nav ul li a.active {
   color: var(--secondary-color);
 }
+main .container-fluid .content-tabs_tab-one {
+  display: flex;
+}
+main .container-fluid .content-tabs_tab-two, main .container-fluid .content-tabs_tab-three, main .container-fluid .content-tabs_tab-four, main .container-fluid .content-tabs_tab-five {
+  display: none;
+}
+main .container-fluid .content-tabs .front-grid {
+  display: grid;
+  grid-template-areas: "product1 product2 product3 product3" "product4 product4 product3 product3" "product4 product4 product5 product6";
+  height: 940px;
+  overflow: hidden;
+}
+main .container-fluid .content-tabs .front-grid .grid-product {
+  position: relative;
+  overflow: hidden;
+}
+main .container-fluid .content-tabs .front-grid .grid-product .product-image img {
+  width: 100%;
+  height: auto;
+}
+main .container-fluid .content-tabs .front-grid .grid-product .price {
+  margin: 14px;
+  display: inline-block;
+  color: var(--primary-color);
+  font-size: 0.8em;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+main .container-fluid .content-tabs .front-grid .grid-product:hover .extra-information {
+  display: block;
+}
+main .container-fluid .content-tabs .front-grid .grid-product .extra-information {
+  position: absolute;
+  height: 100px;
+  bottom: 0px;
+  z-index: 1;
+  background-color: white;
+  color: var(--primary-color);
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+main .container-fluid .content-tabs .front-grid .grid-product .extra-information p {
+  font-size: 0.7em;
+  margin: 0 21px;
+}
+main .container-fluid .content-tabs .front-grid .grid-product .extra-information p strong {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 6px 0;
+  display: inline-block;
+}
+main .container-fluid .content-tabs .front-grid .grid-product .extra-information p strong a {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+main .container-fluid .content-tabs .front-grid .grid-product .extra-information .icon-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+main .container-fluid .content-tabs .front-grid .grid-product .extra-information .icon-actions div {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 7px;
+  color: white;
+  font-size: 0.6em;
+  cursor: pointer;
+}
+main .container-fluid .content-tabs .front-grid .grid-product .extra-information .icon-actions div:hover {
+  background-color: var(--secondary-color);
+}
 main .container-fluid .items-list {
   height: 900px;
   display: flex;
@@ -169,12 +251,6 @@ main .container-fluid .items-list > div > div > div {
 }
 main .container-fluid .items-list > div > div > div:hover .extra-information {
   display: block;
-}
-main .container-fluid .items-list > div > div > div .price {
-  margin: 14px;
-  display: inline-block;
-  color: var(--primary-color);
-  font-size: 0.8em;
 }
 main .container-fluid .items-list > div > div > div .extra-information {
   position: absolute;
@@ -196,27 +272,6 @@ main .container-fluid .items-list > div > div > div .extra-information p strong 
   text-transform: uppercase;
   margin: 6px 0;
   display: inline-block;
-}
-main .container-fluid .items-list > div > div > div .extra-information .icon-actions {
-  display: flex;
-  justify-content: center;
-}
-main .container-fluid .items-list > div > div > div .extra-information .icon-actions div {
-  background-color: var(--primary-color);
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin: 0 7px;
-  color: white;
-  font-size: 0.6em;
-  cursor: pointer;
-}
-main .container-fluid .items-list > div > div > div .extra-information .icon-actions div:hover {
-  background-color: var(--secondary-color);
 }
 main .container-fluid .items-list .items-left {
   height: 100%;
